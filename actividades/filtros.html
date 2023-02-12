@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtros Transiciones</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/icons/bootstrap-icons.css" />
+  </head>
+  <body class="bg-primary bg-opacity-10">
+    <main class="container p-5">
+      <div class="d-flex justify-content-center align-items-center">
+        <p class="my-0 mx-2 fs-2 text-center font-monospace">
+          Filtros Transiciones:
+        </p>
+        <button
+          id="descripcion"
+          class="mx-2 col-sm-6 col-md-4 col-lg-2 btn btn-primary btn-sm"
+        >
+          Mostrar descripción
+        </button>
+        <dialog id="modal" class="col-6 rounded">
+          <div class="mb-3 d-flex justify-content-end">
+            <button id="cerrar" title="cerrar" class="btn btn-secondary btn-sm">
+              <b><i class="bi bi-x-lg"></i></b>
+            </button>
+          </div>
+          <p class="fs-5 font-monospace text-center">
+            <b>Filtros Transiciones:</b> Aplicar y quitar el filtro de inversión
+            horizontal para orientar el movimiento de una imagen. Esta será la
+            pantalla desde la que partimos. Al pulsar el botón "Mover imagen"
+            dicha imagen recorrerá un espacio de la pantalla. Y volverá a su
+            posición inicial. Si pulsamos el botón "Situar imagen" volvemos a la
+            primera pantalla:
+          </p>
+        </dialog>
+      </div>
+
+      <img
+        id="silueta"
+        class="mt-3 imagen position-absolute"
+        src="../images/silueta.gif"
+        alt="silueta"
+        style="left: 0px"
+      />
+
+      <div class="mt-5 pt-5 d-flex justify-content-center">
+        <btn id="izquierda" class="mx-1 col-2 btn btn-primary">
+          <i class="bi bi-arrow-left"></i>
+        </btn>
+        <btn id="derecha" class="mx-1 col-2 btn btn-primary">
+          <i class="bi bi-arrow-right"></i>
+        </btn>
+      </div>
+
+      <div class="mt-2 d-grid gap-3">
+        <btn id="situar" class="mx-auto col-4 btn btn-primary">
+          Situar Imagen
+        </btn>
+      </div>
+
+      <div class="mt-4 d-grid gap-3">
+        <a class="mx-auto col-4 btn btn-secondary" href="../index.html">
+          Volver
+        </a>
+      </div>
+    </main>
+
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/funciones.js"></script>
+    <script src="../js/filtros.js"></script>
+  </body>
+</html>

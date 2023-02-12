@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posicionamiento</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/icons/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../css/posicionamiento.css" />
+  </head>
+  <body class="bg-primary bg-opacity-10">
+    <main class="container p-5">
+      <div class="m-0 d-flex justify-content-center align-items-center">
+        <p class="my-0 mx-2 fs-2 text-center font-monospace">
+          Posicionamiento:
+        </p>
+        <button
+          id="descripcion"
+          class="mx-2 col-sm-6 col-md-4 col-lg-2 btn btn-primary btn-sm"
+        >
+          Mostrar descripción
+        </button>
+        <dialog id="modal" class="col-6 rounded">
+          <div class="mb-3 d-flex justify-content-end">
+            <button id="cerrar" title="cerrar" class="btn btn-secondary btn-sm">
+              <b><i class="bi bi-x-lg"></i></b>
+            </button>
+          </div>
+          <p class="fs-5 font-monospace text-center">
+            <b>Posicionamiento:</b> Dadas las imágenes siguientes realizar un
+            menú de imágenes y texto usando posicionamiento absoluto. El texto
+            que aparecerá sobre las imágenes es: Servicios, Sitios, Pruebas y
+            Ejemplos.
+          </p>
+          <p class="fs-5 font-monospace text-center">
+            Desde cada imagen se accederá a páginas distintas.
+          </p>
+        </dialog>
+      </div>
+
+      <div id="imagenes" class="mt-5 d-flex justify-content-evenly"></div>
+
+      <div class="mt-5 d-grid gap-3">
+        <a class="mx-auto col-4 btn btn-secondary" href="../index.html">
+          Volver
+        </a>
+      </div>
+    </main>
+
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/funciones.js"></script>
+    <script src="../js/posicionamiento.js"></script>
+  </body>
+</html>
